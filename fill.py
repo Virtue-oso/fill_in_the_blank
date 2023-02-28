@@ -119,7 +119,8 @@ for quote in quotes:
         
 x = len(blanks_n_keys)
 while x !=0:
-    i = random.randint(0, x)
+    
+    i = random.randint(0, x-1)
     quoteNkey = blanks_n_keys[i]
     quote = quoteNkey[0]
     answer = quoteNkey[1]
@@ -128,3 +129,6 @@ while x !=0:
     input("\n press enter to show answers\n")
     print(answer)
     print()
+    x = len(blanks_n_keys)
+    print(str(x) + " fill in the blanks left!\n")
+    print("Congrats good luck on the test")
